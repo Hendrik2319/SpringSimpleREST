@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple REST</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<style type="text/css" media="screen">
+		body {
+			font-family: sans-serif;
+			font-size: 13px;
+		}
+		form {
+			border: 1px solid gray;
+			border-radius: 5px;
+			padding: 5px;
+			background: #f7f7f7;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+		<label form="persons">all persons:</label>
+		<form id="persons" action="/persons" method="GET" target="_blank">
+			<button type="submit">submit</button>
+		</form>
+
+		<label form="add_person">add a person:</label>
+		<form id="add_person" action="/persons" method="POST" target="_blank">
+			<label for="add_person_firstName">first name:</label>
+			<input type="text" name="firstName" id="add_person_firstName" maxlength="40">
+			<br/>
+			<label for="add_person_lastName">last name:</label>
+			<input type="text" name="lastName"  id="add_person_lastName"  maxlength="40">
+			<br/>
+			<button type="reset">reset</button>
+			<button type="submit">submit</button>
+		</form>
+
+		<label form="findByLastName">find person by last name:</label>
+		<form id="findByLastName" action="/persons/search/lastnames" method="GET" target="_blank">
+			<label for="findByLastName_name">last name:</label>
+			<input type="text" name="name" id="findByLastName_name" maxlength="40">
+			<br/>
+			<button type="reset">reset</button>
+			<button type="submit">submit</button>
+		</form>
+		
+		<!--
+		<label form="persons">all persons</label>
+		<form id="persons" action="/persons">
+			<label for="greetings_name">Name:</label>
+			<input type="text" name="name" id="greetings_name" maxlength="40">
+			<button type="reset">reset</button>
+			<button type="submit">submit</button>
+		</form>
+		-->
+</body>
+</html>

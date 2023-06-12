@@ -35,4 +35,7 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Misc. ###
 /test_responses
+response.json

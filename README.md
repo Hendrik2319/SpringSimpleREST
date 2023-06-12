@@ -14,5 +14,3 @@ This project ist derived from Springs example [Accessing JPA Data with REST](htt
 1. Pull this repository
 2. Copy `config/application.properties.default` to `config/application.properties`
 3. Set path, username and password of your mysql database in `config/application.properties`
-
-- testing a Release

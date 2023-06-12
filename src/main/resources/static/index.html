@@ -19,12 +19,12 @@
 </head>
 <body>
 		<label form="persons">all persons:</label>
-		<form id="persons" action="/persons" method="GET" target="_blank">
+		<form id="persons" action="/rest/persons" method="GET" target="_blank">
 			<button type="submit">submit</button>
 		</form>
 
 		<label form="add_person">add a person:</label>
-		<form id="add_person" action="/persons" method="POST" target="_blank">
+		<form id="add_person" action="/rest/persons" method="POST" target="_blank">
 			<label for="add_person_firstName">first name:</label>
 			<input type="text" name="firstName" id="add_person_firstName" maxlength="40">
 			<br/>
@@ -36,7 +36,7 @@
 		</form>
 
 		<label form="findByLastName">find person by last name:</label>
-		<form id="findByLastName" action="/persons/search/lastnames" method="GET" target="_blank">
+		<form id="findByLastName" action="/rest/persons/search/lastnames" method="GET" target="_blank">
 			<label for="findByLastName_name">last name:</label>
 			<input type="text" name="name" id="findByLastName_name" maxlength="40">
 			<br/>

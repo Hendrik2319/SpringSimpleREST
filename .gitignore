@@ -38,4 +38,5 @@ out/
 
 ### Misc. ###
 /test_responses
-response.json
+/response.json
+/config/application.properties
